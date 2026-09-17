@@ -1,0 +1,57 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            font-size: clamp(12px, 3vw, 32px);
+            word-wrap: break-word;
+        }
+
+        .name {
+            background-color: lightblue;
+        }
+
+        .description {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td class="name">My Cat</td>
+            <td class="description">Cute Cat</td>
+        </tr>
+
+        <tr>
+            <td class="name">My Dog</td>
+            <td class="description">Happy Dog</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+```
