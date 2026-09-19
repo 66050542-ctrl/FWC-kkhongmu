@@ -1,4 +1,3 @@
-```javascript
 const balloon = document.getElementById("balloon");
 
 let size = 200;
@@ -13,8 +12,7 @@ function updateBalloon() {
 }
 
 balloon.addEventListener("click", function () {
-    size += 10;
-
+    size = size + 10;
     colorIndex = (colorIndex + 1) % 3;
 
     if (size > 420) {
@@ -26,7 +24,7 @@ balloon.addEventListener("click", function () {
 });
 
 balloon.addEventListener("mouseleave", function () {
-    size -= 5;
+    size = size - 5;
 
     if (size < 200) {
         size = 200;
@@ -36,4 +34,3 @@ balloon.addEventListener("mouseleave", function () {
 
     updateBalloon();
 });
-```

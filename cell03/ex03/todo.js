@@ -9,7 +9,7 @@ function saveTodos() {
         todos.push(todo.textContent);
     });
 
-    document.cookie = "todos=" + encodeURIComponent(JSON.stringify(todos)) + "; path=/";
+    document.cookie = "todos=" + encodeURIComponent(JSON.stringify(todos)) + "; max-age=31536000; path=/";
 }
 
 // สร้าง To-Do
