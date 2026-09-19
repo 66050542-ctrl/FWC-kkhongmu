@@ -1,0 +1,73 @@
+body {
+    padding-top: 76px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.content-overlay {
+    position: relative;
+    z-index: 1;
+}
+.portfolio-img {
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.bg-parallax-about {
+    background-image: linear-gradient(rgba(255, 249, 242, 0.9), rgba(255, 249, 242, 0.9)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1920&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bg-parallax-skills {
+    background-image: linear-gradient(rgba(232, 220, 196, 0.9), rgba(232, 220, 196, 0.9)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bg-parallax-projects {
+    background-image: linear-gradient(rgba(255, 249, 242, 0.9), rgba(255, 249, 242, 0.9)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.parallax-divider {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 350px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divider-1 {
+    background-image: linear-gradient(rgba(18, 63, 54, 0.8), rgba(18, 63, 54, 0.8)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80');
+}
+.divider-2 {
+    background-image: linear-gradient(rgba(18, 63, 54, 0.8), rgba(18, 63, 54, 0.8)), url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1920&q=80');
+}
+.center-text {
+    background-color: #FFF9F2;
+    color: #123F36;
+    padding: 15px 50px;
+    font-size: 26px;
+    font-weight: 800;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+}
